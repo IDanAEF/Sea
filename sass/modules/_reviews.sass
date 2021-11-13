@@ -10,16 +10,19 @@
 		margin: 0 auto
 	&__dots
 		display: flex
-		justify-content: space-between
 		align-items: center
-		margin: 46px auto
-		width: 105px
+		justify-content: center
+		margin: 46px 0px
 		&-dot
 			width: 8px
 			height: 8px
 			background-color: #ffffff
 			box-shadow: -1px 1px 4px 0px rgba(0,0,0,0.4)
 			border-radius: 100%
+			cursor: pointer
+			transition: 0.2s all
+			&:not(:last-child)
+				margin-right: 15px
 			&.active
 				width: 20px
 				height: 20px
@@ -33,11 +36,11 @@
 		&-items 
 			display: flex
 			align-items: center
+			transition: 0.5s all
 		&-item 
 			width: 430px
 			height: 237px
 			background-color: #ffffff
-			box-shadow: -4px 4px 8px 0px rgba(0,0,0,0.2)
 			padding: 28px 56px 18px 43px
 			display: flex
 			flex-direction: column
@@ -53,6 +56,7 @@
 				justify-content: space-between
 		&-line
 			width: 945px
+			overflow: hidden
 		&-left, &-right 
 			position: absolute
 			cursor: pointer

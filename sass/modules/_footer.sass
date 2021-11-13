@@ -1,0 +1,75 @@
+.footer 
+	min-height: 338px
+	padding-top: 59px
+	position: relative
+	overflow: hidden
+	&__circle
+		z-index: -1
+		right: -174px
+		bottom: -174px
+	&__info
+		width: 945px
+		display: flex
+		justify-content: space-between
+		margin: 0 auto
+	&__hr
+		width: 945px
+		height: 1px
+		background-color: #e0e0e0
+		margin: 25px auto 0px
+		border: none
+	&__nav
+		&-title
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			color: #131313
+			margin-bottom: 22px
+		&-list
+			list-style-type: none
+			&-item 
+				height: 23px
+				&:not(:last-child)
+					margin-bottom: 14px
+				&:hover
+					border-bottom: 3px solid $main-color
+				a 
+					font-size: 14px
+					font-weight: 400
+					color: #131313
+					text-decoration: none
+	&__contacts
+		display: flex
+		flex-direction: column
+		&-title
+			font-size: 18px
+			font-weight: 700
+			text-transform: uppercase
+			color: #131313
+			margin-bottom: 24px
+		&-address, &-phone, &-phone a
+			font-size: 14px
+			font-weight: 400
+			color: #131313
+			text-decoration: none
+			margin-bottom: 15px
+		&-phone 
+			a
+				&:hover
+					text-decoration: underline
+		&-links
+			display: flex
+			&-circle
+				width: 33px
+				height: 33px
+				border: 2px solid #131313
+				border-radius: 100%
+				display: flex
+				align-items: center
+				justify-content: center
+				&:not(:last-child)
+					margin-right: 10px
+			a
+				font-size: 17px
+				color: #131313
+				text-decoration: none

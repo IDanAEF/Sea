@@ -7,17 +7,17 @@
 	<title>Sea</title>
 </head>
 <body>
-	<section class="promo">
+	<section id="promo" class="promo">
 		<div class="promo__circle circle circle_white"></div>
 		<div class="container">
 			<header class="header">
 				<nav class="header__nav">
 					<ul class="header__list">
-						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#">о нас</a></li>
-						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#">номера</a></li>
-						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#">как добраться</a></li>
-						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#">отзывы</a></li>
-						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#">контакты</a></li>
+						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#about">о нас</a></li>
+						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#rooms">номера</a></li>
+						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#way">как добраться</a></li>
+						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#reviews">отзывы</a></li>
+						<li class="header__list-item"><a class="title title_fz18 title_fw700 title_white" href="#footer">контакты</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -25,7 +25,7 @@
 			<button class="promo__button button">забронировать номер</button>
 		</div>
 	</section>
-	<section class="about">
+	<section id="about" class="about">
 		<div class="about__circle circle circle_orange"></div>
 		<div class="container">
 			<h2 class="about__title title title_fz30 title_square">о нас</h2>
@@ -82,7 +82,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="rooms">
+	<section id="rooms" class="rooms">
 		<div class="container">
 			<h2 class="rooms__title title title_fz30 title_square">номера</h2>
 			<div class="rooms__info">
@@ -172,7 +172,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="way">
+	<section id="way" class="way">
 		<div class="way__circle circle circle_orange"></div>
 		<div class="container">
 			<div class="way__title title title_fz30 title_square">
@@ -186,35 +186,62 @@
 			</div>
 		</div>
 	</section>
-	<section class="reviews">
+	<section id="reviews" class="reviews">
 		<div class="container">
 			<div class="reviews__title title title_fz30 title_square">отзывы</div>
 			<div class="reviews__slider">
 				<img class="reviews__slider-left" src="icons/left.png" alt="Влево">
 				<div class="reviews__slider-line">
 					<div class="reviews__slider-items">
-						<div class="reviews__slider-item">
+						<!--<div class="reviews__slider-item">
 							<div class="text">Хочу предупредить всех! Не везите с собой посуду и всё, что только вам придет в голову ) В этом году мы допустили эту ошибку и привезли всё с собой.<br>А оказалось в пансионате есть абсолютно всё, чему были очень приятно удивлены.<br>Лариса, спасибо вам за то, что наш отдых был максимально комфортный и уютный. Привет от всей семьи.</div>
 							<div class="reviews__slider-item-bott">Мария<span>29.07.17</span></div>
 						</div>
 						<div class="reviews__slider-item">
 							<div class="text">Пару дней как приехала с моря (неделю отдыхала в этом пансионате). Впечатления только положительные. В комнатах, в душах, во дворе чистота и порядок, хозяйка просто умничка. Советую всем - не пожалеете.</div>
 							<div class="reviews__slider-item-bott">Светлана<span>25.06.15</span></div>
-						</div>
+						</div>-->
 					</div>
 				</div>
 				<img class="reviews__slider-right" src="icons/right.png" alt="Вправо">
 			</div>
 			<div class="reviews__dots">
-				<div class="reviews__dots-dot"></div>
-				<div class="reviews__dots-dot"></div>
-				<div class="reviews__dots-dot active"></div>
-				<div class="reviews__dots-dot"></div>
-				<div class="reviews__dots-dot"></div>
+				<!--<div class="reviews__dots-dot active"></div>-->
 			</div>
 			<button class="reviews__button button">оставить отзыв</button>
 		</div>
 	</section>
+	<footer id="footer" class="footer">
+		<div class="footer__circle circle circle_orange"></div>
+		<div class="container">
+			<div class="footer__info">
+				<div class="footer__contacts">
+					<div class="footer__contacts-title">контакты</div>
+					<div class="footer__contacts-address">Железный Порт, переулок Маячный 23</div>
+					<div  class="footer__contacts-phone"><a href="tel: +380633843175">+38 (063) 384 31 75</a></div>
+					<div  class="footer__contacts-phone"><a href="tel: +380953246731">+38 (095) 324 67 31</a></div>
+					<div  class="footer__contacts-phone"><a href="tel: +380934660520">+38 (093) 466 05 20</a></div>
+					<div  class="footer__contacts-phone"><a href="tel: +380979089277">+38 (097) 908 92 77</a></div>
+					<div class="footer__contacts-links">
+						<div class="footer__contacts-links-circle"><a href="#" class="icon-facebook"></a></div>
+						<div class="footer__contacts-links-circle"><a href="#" class="icon-instagram"></a></div>
+						<div class="footer__contacts-links-circle"><a href="#" class="icon-telegram"></a></div>
+					</div>
+				</div>
+				<nav class="footer__nav">
+					<div class="footer__nav-title">навигация</div>
+					<ul class="footer__nav-list">
+						<li class="footer__nav-list-item"><a href="#promo">Главная</a></li>
+						<li class="footer__nav-list-item"><a href="#about">О нас</a></li>
+						<li class="footer__nav-list-item"><a href="#rooms">Номера</a></li>
+						<li class="footer__nav-list-item"><a href="#way">Как добраться</a></li>
+						<li class="footer__nav-list-item"><a href="#reviews">Отзывы</a></li>
+					</ul>
+				</nav>
+			</div>
+			<hr class="footer__hr">
+		</div>
+	</footer>
 	<script src="js/script.js"></script>
 </body>
 </html>
