@@ -1,0 +1,62 @@
+.reviews 
+	min-height: 600px
+	margin-top: 33px
+	padding-top: 101px
+	background: url('../img/reviews_bg.jpg') 50%/cover no-repeat
+	.container
+		position: relative
+	&__button
+		display: block
+		margin: 0 auto
+	&__dots
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 46px auto
+		width: 105px
+		&-dot
+			width: 8px
+			height: 8px
+			background-color: #ffffff
+			box-shadow: -1px 1px 4px 0px rgba(0,0,0,0.4)
+			border-radius: 100%
+			&.active
+				width: 20px
+				height: 20px
+				border: 3px solid #818181
+				background-color: $main-color
+	&__slider
+		height: 237px
+		display: flex
+		align-items: center
+		justify-content: center
+		&-items 
+			display: flex
+			align-items: center
+		&-item 
+			width: 430px
+			height: 237px
+			background-color: #ffffff
+			box-shadow: -4px 4px 8px 0px rgba(0,0,0,0.2)
+			padding: 28px 56px 18px 43px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			border-radius: 25px
+			&:nth-child(2n-1)
+				margin-right: 85px
+			&-bott
+				font-size: 14px
+				font-weight: 300
+				color: #6d6d6d
+				display: flex
+				justify-content: space-between
+		&-line
+			width: 945px
+		&-left, &-right 
+			position: absolute
+			cursor: pointer
+		&-left
+			left: 0
+		&-right
+			right: 0
