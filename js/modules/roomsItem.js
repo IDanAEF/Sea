@@ -76,7 +76,7 @@ class RoomsItem {
 						</tr>
 					</table>
 				</div>
-				<button class="rooms__item-button button">
+				<button data-roombtn class="rooms__item-button button button_main">
 					забронировать номер
 				</button>
 			</div>

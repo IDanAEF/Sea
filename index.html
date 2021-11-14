@@ -22,7 +22,7 @@
 				</nav>
 			</header>
 			<h1 class="promo__title">Отдых в Железном Порту <span>"Затишок Чёрного Моря"</span></h1>
-			<button class="promo__button button">забронировать номер</button>
+			<button data-roombtn class="promo__button button button_main">забронировать номер</button>
 		</div>
 	</section>
 	<section id="about" class="about">
@@ -208,7 +208,7 @@
 			<div class="reviews__dots">
 				<!--<div class="reviews__dots-dot active"></div>-->
 			</div>
-			<button class="reviews__button button">оставить отзыв</button>
+			<button class="reviews__button button button_main">оставить отзыв</button>
 		</div>
 	</section>
 	<footer id="footer" class="footer">
@@ -242,6 +242,51 @@
 			<hr class="footer__hr">
 		</div>
 	</footer>
+	<div class="modals">
+		<div class="modal__review modal">
+			<div class="modal__close">
+				<span></span><span></span>
+			</div>
+			<div class="modal__title">Оставить отзыв</div>
+			<form class="modal__form">
+				<input name="name" placeholder="Имя, фамилия*" type="text">
+				<input name="phone" placeholder="Номер телефона*" type="tel">
+				<textarea name="review" placeholder="Отзыв*"></textarea>
+				<button class="modal__button button button_blue">отправить</button>
+			</form>
+		</div>
+		<div class="modal__room modal">
+			<div class="modal__close">
+				<span></span><span></span>
+			</div>
+			<div class="modal__title">Бронирование номера</div>
+			<form class="modal__form">
+				<input name="name" placeholder="Имя, фамилия*" type="text">
+				<input name="phone" placeholder="Номер телефона*" type="tel">
+				<input name="email" placeholder="Email*" type="email">
+				Планируемая дата заезда
+				<input name="dateIn" type="date">
+				Планируемая дата выезда
+				<input name="dateOut" type="date">
+				<br>
+				<select name="type">
+					<option disabled selected="selected" value="Тип номера">Тип номера</option>
+					<option value="Эконом">Эконом</option>
+					<option value="Стандарт">Стандарт</option>
+					<option value="Стандарт улучшенный">Стандарт улучшенный</option>
+				</select>
+				<br>
+				<select name="people">
+					<option disabled selected="selected" value="Тип номера">Количество человек</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+				<button class="modal__button button button_blue">отправить</button>
+			</form>
+		</div>
+	</div>
 	<script src="js/script.js"></script>
 </body>
 </html>
