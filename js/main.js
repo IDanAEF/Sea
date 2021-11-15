@@ -1,8 +1,9 @@
 import rooms from "./modules/rooms";
 import sliderRooms from "./modules/sliderRooms";
 import reviews from './modules/reviews';
-import sliderReviews from "./modules/sliderReviews.js";
-import modals from "./modules/modals.js";
+import sliderReviews from "./modules/sliderReviews";
+import modals from "./modules/modals";
+import postData from "./modules/postData";
 
 window.addEventListener('DOMContentLoaded', () => {
 	rooms();
@@ -10,4 +11,5 @@ window.addEventListener('DOMContentLoaded', () => {
 	reviews();
 	sliderReviews();
 	modals();
+	postData();
 });
