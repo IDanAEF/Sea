@@ -12,7 +12,7 @@ function sliderReviews() {
 		count = 0;
 
 	function addDots() {
-		for (let i = 0; i < Math.ceil(count / 2); i++) {
+		for (let i = 0; i < count; i++) {
 			if (i == 0) {
 				dots.innerHTML += `
 					<div class="reviews__dots-dot active"></div>
@@ -43,7 +43,13 @@ function sliderReviews() {
 	.then(res => {
 		const {reviews} = res;
 
-		count = reviews.length;
+		if (document.documentElement.scrollWidth <= 575) {
+			count = reviews.length;
+		} else {
+			count = Math.ceil(reviews.length / 2);
+		}
+
+		console.log(count);
 
 		addDots();
 
@@ -53,24 +59,25 @@ function sliderReviews() {
 			}
 		}
 
-		sliderUpdate.style.width = (Math.ceil(count / 2) * 100) + "%";
+		sliderUpdate.style.width = (count * 100) + "%";
 
 		elements.forEach((item, i) => {
 			item.addEventListener('click', () => {
 				removeActive()
 				item.classList.add('active');
+				curr = i;
 				translate = i * width;
 				sliderUpdate.style.transform = `translateX(-${translate}px)`;
 			});
 		});
 
 		rightSlide.addEventListener('click', () => {
-			if (translate >= (Math.ceil(count / 2) - 1) * width) {
+			if (translate >= (count - 1) * width) {
 				curr = 0;
 				translate = 0;
 			} else {
 				curr++;
-				translate += width;
+				translate = curr * width;
 			}
 
 			removeActive();
@@ -81,10 +88,10 @@ function sliderReviews() {
 		leftSlide.addEventListener('click', () => {
 			if (translate <= 0) {
 				curr = elements.length - 1;
-				translate = (Math.ceil(count / 2) - 1) * width;
+				translate = (count - 1) * width;
 			} else {
 				curr--;
-				translate -= width;
+				translate = curr * width;
 			}
 
 			removeActive();

@@ -152,3 +152,51 @@
 		font-size: 18px
 		font-weight: 600
 		color: #131313
+.header 
+	&__close
+		width: 15px
+		height: 15px
+		position: absolute
+		right: 10px
+		top: 13px
+		cursor: pointer
+		span 
+			display: block
+			height: 2px
+			background-color: black
+			&:nth-child(1)
+				transform: rotate(45deg)
+			&:nth-child(2)
+				transform: translateY(-2px) rotate(-45deg)
+	&__menu
+		background-color: $main-color
+		position: absolute
+		top: 0
+		left: -100%
+		padding: 15px 15px
+		box-shadow: 3px 5px 10px 3px rgba(0, 0, 0, 0.7)
+		transition: 0.3s all
+		&.active
+			left: 0
+		.header__list
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			&-item 
+				&:hover
+					border-bottom: 1px solid black
+				&:not(:last-child)
+					margin-bottom: 5px
+				a 
+					color: black
+	&__hamburger
+			width: 25px
+			height: 13px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			span
+				display: block
+				height: 2px 
+				width: 100%
+				background-color: white

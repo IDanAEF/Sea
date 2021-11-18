@@ -1,6 +1,29 @@
 @media (max-width: 1199px)
 	.container
 		width: 960px
+	.modal 
+		width: 260px
+		min-height: 410px
+		padding: 15px 12px 22px
+		font-size: 13px
+		&__button 
+			margin-top: 14px
+		&__close
+			width: 26px
+			height: 26px
+			right: -23px
+			top: -23px
+			span 
+				width: 15px
+		&__title
+			font-size: 16px
+		&__form 
+			margin-top: 12px
+			input, option 
+				height: 34px
+				margin-bottom: 4px
+			input, select, textarea
+				font-size: 13px
 	.title
 		&_square
 			margin: 0px auto 40px auto
@@ -23,9 +46,12 @@
 	.button 
 		font-size: 13px
 		border-radius: 25px
-		&__main
+		&_main
 			width: 235px
 			height: 42px
+		&_blue
+			width: 125px
+			height: 35px 
 	.text 
 		font-size: 13px
 	.promo 
@@ -179,6 +205,30 @@
 @media (max-width: 991px)
 	.container
 		width: 720px
+	.modal 
+		width: 245px
+		min-height: 377px
+		padding: 13px 10px 20px
+		font-size: 12px
+		&__button
+			margin-top: 14px
+		&__title
+			font-size: 14px
+		&__form
+			margin-top: 9px
+			input, option 
+				height: 31px
+				margin-bottom: 4px
+			input, select, textarea
+				font-size: 12px
+		&__close
+			width: 23px
+			height: 23px
+			right: -17px
+			top: -17px
+			span 
+				width: 12px
+				height: 1px
 	.title 
 		&_fw700
 			line-height: 24
@@ -204,6 +254,9 @@
 		&_main
 			width: 225px
 			height: 40px
+		&_blue
+			width: 120px
+			height: 32px
 	.text 
 		font-size: 11px
 	.promo 
@@ -342,6 +395,30 @@
 @media (max-width: 767px)
 	.container
 		width: 540px
+	.modal 
+		width: 215px
+		min-height: 318px
+		padding: 11px 8px 18px
+		font-size: 10px
+		&__button
+			margin-top: 10px
+		&__close
+			width: 20px
+			height: 20px
+			right: -13px
+			top: -13px
+			border: 1px solid #fff
+		&__title
+			font-size: 12px
+		&__form
+			margin-top: 7px
+			textarea
+				height: 170px
+			input, option 
+				height: 26px
+				margin-bottom: 3px
+			input, select, textarea
+				font-size: 10px
 	.title
 		&_fz18
 			font-size: 11px
@@ -360,6 +437,9 @@
 		line-height: 9px
 		&_main
 			width: 170px
+			height: 30px
+		&_blue
+			width: 100px
 			height: 30px
 	.circle 
 		&_orange 
@@ -523,3 +603,214 @@
 		&__hr
 			width: 100%
 			margin: 14px auto 0px
+@media (max-width: 575px)
+	.container
+		width: auto
+		padding: 0px 10px
+	.modal 
+		width: 165px
+		min-height: 263px
+		padding: 9px 6px 13px
+		font-size: 9px
+		&__close
+			width: 16px
+			height: 16px
+			right: -10px
+			top: -10px
+			span 
+				width: 14px
+		&__title
+			font-size: 10px
+		&__form
+			margin-top: 4px
+			input, select, textarea
+				font-size: 8px
+				padding: 0px 5px
+			textarea
+				height: 143px
+			input, option 
+				height: 21px
+		&__button
+			margin-top: 10px
+	.title
+		&_fz18
+			font-size: 10px
+			line-height: 10px
+		&_fz30
+			font-size: 12px
+			line-height: 12px
+		&_square
+			margin: 0px auto 16px
+			&:before
+				left: -9px
+				width: 26px
+				height: 26px
+	.button 
+		font-size: 8px
+		line-height: 8px
+		&_main
+			width: 150px
+			height: 27px
+		&_blue
+			width: 80px
+			height: 24px
+	.circle 
+		&_orange 
+			width: 130px
+			height: 130px
+			border: 15px solid $main-color
+	.text 
+		font-size: 8px
+		line-height: 1
+	.header
+		display: flex
+		justify-content: flex-end
+		margin-bottom: 75px
+		height: 13px
+		&__menu
+			display: block
+		&__hamburger
+			display: flex
+		&__nav
+			display: none
+	.promo 
+		min-height: 270px
+		padding: 11px 0px
+		&__button
+			margin-top: 75px
+		&__title
+			font-size: 14px
+			line-height: 25px
+			width: 280px
+			span 
+				font-size: 18px
+	.about 
+		padding: 20px 0px 12px
+		&__circle
+			top: 9px
+			left: 2px
+		&__info
+			grid-template: 170px 155px / 1fr
+			gap: 10px 0px
+	.advantages
+		padding: 20px 0px 15px
+		&__item
+			&-undtext
+				font-size: 9px
+			&-circle
+				width: 50px
+				height: 50px
+				margin-bottom: 4px
+		&__percs
+			grid-template: auto / repeat(3, 50px)
+			gap: 15px
+			&-col 
+				&.top 
+					margin-top: 20px
+	.rooms 
+		padding-top: 20px
+		&__info
+			grid-template: auto / 85%
+			grid-auto-rows: auto 
+			justify-content: center
+			gap: 15px 0px
+		&__item
+			gap: 7px 0px
+			grid-template: 190px 177px / 1fr
+			&-price
+				margin: 5px 0px
+				table 
+					margin-top: 5px
+					height: 45px
+					font-size: 8px
+					line-height: 8px
+				&-undertitle
+					font-size: 7px
+			&-device
+				&-img
+					width: 6px
+					margin-right: 6px
+				&-info
+					font-size: 8px
+			&-equipment
+				&-title
+					margin-bottom: 3px
+			&-fitting
+				gap: 4px 0px
+			&-head
+				top: -30px
+				width: 161px
+				height: 60px
+				.sides 
+					margin-bottom: 6px
+					font-size: 9px
+	.way 
+		padding-top: 20px
+		&__circle
+			top: 13px
+			right: 4px
+		&__navigation
+			grid-template: 115px 170px / 1fr
+	.reviews
+		min-height: 250px
+		margin-top: 15px
+		padding-top: 20px
+		&__slider
+			height: 125px
+			&-item 
+				height: 125px
+				padding: 13px 15px 10px
+				&-bott 
+					font-size: 9px
+				&:nth-child(2n-1)
+					margin-right: 0px
+			&-left, &-right
+				width: 9px
+				bottom: 32px
+			&-right 
+				right: 30px
+			&-left 
+				left: 30px
+		&__dots
+			margin: 10px 0px
+			&-dot
+				width: 5px
+				height: 5px
+				&.active 
+					width: 10px
+					height: 10px
+				&:not(:last-child)
+					margin-right: 10px
+	.footer 
+		min-height: 155px
+		padding-top: 15px
+		&__hr 
+			margin: 14px auto 0px
+		&__circle
+			right: -65px
+			bottom: -65px
+		&__nav
+			&-title
+				font-size: 10px
+				margin-bottom: 5px
+			&-list
+				&-item 
+					a 
+						font-size: 8px
+					&:not(:last-child)
+						margin-bottom: 6px
+		&__contacts
+			&-title
+				font-size: 10px
+				margin-bottom: 5px
+			&-address, &-phone, &-phone a 
+				font-size: 8px
+				margin-bottom: 6px
+			&-links
+				&-circle
+					width: 19px
+					height: 19px
+					a 
+						font-size: 10px
+					&:not(:last-child)
+						margin-right: 6px

@@ -46,6 +46,19 @@ function modals() {
 	});
 
 	overClose(modalRoom);
+
+	//header menu
+	const menu = document.querySelector('.header__menu'),
+		  closeBtn = document.querySelector('.header__close'),
+		  hamburger = document.querySelector('.header__hamburger');
+
+	hamburger.addEventListener('click', () => {
+		menu.classList.toggle('active');
+	});
+
+	closeBtn.addEventListener('click', () => {
+		menu.classList.remove('active');
+	});
 }
 
 export default modals;
